@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply p-0 m-0 bg-[#EEEEEE] flex flex-col items-center;
+}
+
+.main-wrapper {
+	@apply flex flex-col w-72 items-center h-screen;
+}
+
+.logo {
+	@apply text-6xl text-[#393155] mt-32;
+	font-family: 'Medula One', cursive;
+}
+
+.logo .orange {
+	@apply text-[#FF8A00]
+}
+
+.btn,
+.search-input {
+	@apply flex w-full px-6 py-4 rounded-md mt-8
+}
+
+.search-input:focus {
+	@apply outline-1 outline-[#FF8A00]
+}
+
+.search-input::placeholder {
+	@apply text-[#A8A8A8] italic text-sm
+}
+
+.btn.primary {
+	@apply bg-[#393155] text-white mt-4 justify-center font-sans;
+	font-family: 'Inter', sans-serif;
+}
