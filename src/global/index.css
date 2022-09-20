@@ -15,6 +15,11 @@ body {
 	font-family: 'Medula One', cursive;
 }
 
+.logo-sm {
+	@apply text-6xl text-[#393155] mt-4;
+	font-family: 'Medula One', cursive;
+}
+.logo-sm .orange,
 .logo .orange {
 	@apply text-[#FF8A00]
 }
