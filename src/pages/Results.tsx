@@ -57,6 +57,12 @@ export function Results() {
 	<>
 		<Logo className="logo-sm" />
 		<Geolocalization latitude={data?.data.geo.latitude} longitude={data?.data.geo.longitude} />
-		<span>oi negada</span>
+		<div className="actions">
+			<div className="actions-group">
+				<button className="btn primary">Photos</button>
+				<button className="btn primary">Tips</button>
+			</div>
+			<button className="btn secondary">I found!</button>
+		</div>
 	</>
 }

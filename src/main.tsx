@@ -4,7 +4,6 @@ import App from './App'
 import { Results } from './pages/Results'
 import { ApolloProvider } from '@apollo/client'
 import { client } from './lib/apollo'
-import './global/index.css'
 import {
   createBrowserRouter,
   RouterProvider,

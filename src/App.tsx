@@ -3,6 +3,7 @@ import {
   Link
 } from "react-router-dom";
 import { Logo } from "./components/Logo";
+import './global/index.css'
 
 function App() {
 
