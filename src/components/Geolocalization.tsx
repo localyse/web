@@ -17,12 +17,20 @@ export function Geolocalization({latitude = -23.403563, longitude = -51.991066}:
 		lng: longitude
 	};
 
-	return isLoaded && (
+	return isLoaded ? (
 		<GoogleMap
-			mapContainerStyle={{width: '100%', height: '50%', marginTop: '1.5rem', borderRadius: '0.5rem', border: '1px solid #393155'}}
+			mapContainerStyle={
+				{
+					width: '100%',
+					flex: '1',
+					marginTop: '1.5rem', 
+					borderRadius: '0.5rem', 
+					border: '1px solid #393155'
+				}
+			}
 			center={center}
 			zoom={20}
 		>
 		</GoogleMap>
-	)
+	) : <></>
 }

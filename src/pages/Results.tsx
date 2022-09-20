@@ -56,6 +56,7 @@ export function Results() {
 	</> :
 	<>
 		<Logo className="logo-sm" />
-		<Geolocalization />
+		<Geolocalization latitude={data?.data.geo.latitude} longitude={data?.data.geo.longitude} />
+		<span>oi negada</span>
 	</>
 }
